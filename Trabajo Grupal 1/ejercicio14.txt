@@ -1,0 +1,1 @@
+No como en Java, ya que Python todas las variables se comportan igual y no existen diferencias tan marcadas entre valor y referencia.La diferencia mas destacable es la mutabilidad porque los objetos inmutables se comportan como si fueran por valor, mientras que los mutables lo hacen como por referencia.
