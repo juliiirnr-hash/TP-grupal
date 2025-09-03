@@ -1,0 +1,10 @@
+valorDecimal = float(input("Ingrese un número decimal: "))
+valorBooleano = bool(valorDecimal)
+valorEntero = int(valorDecimal)
+valorCadena = str(valorDecimal)
+
+print("Conversiones: ")
+print(f"Valor ingresado: {valorDecimal}")
+print(f"Valor convertido a booleano: {valorBooleano}")
+print(f"Valor convertido a entero: {valorEntero}")
+print(f"Valor convertido a cadena: {valorCadena}")
