@@ -47,12 +47,13 @@ def pedido_golosina(cod_solicitado,golosinas,cantidad,clavesTecnico):
    for fila in golosinas[1:]:          # Salta el encabezado
       if fila[0]==cod_solicitado:
         cantidad+=int(input(f"Cuanto/as {fila[1]} quiere?"))
-        if cantidad<=fila[2]:             # Verifica si hay stock suficiente
+        if 0<cantidad<=fila[2]:             # Verifica si hay stock suficiente
               fila[2]=fila[2]-cantidad
               golosinasPedidas.append([fila[0],fila[1],cantidad])
               print("✅ Golosina agregada al pedido.")
         else:
               print(f"Lo sentimos la golosina {fila[1]} no se encuentra disponible, seleccione otra golosina o ingresa salir si no desea otra golosina")
+
 
         return            # Sale de la función después de procesar
       
