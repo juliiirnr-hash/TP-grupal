@@ -38,11 +38,13 @@ clavesTecnico = ("admin", "CCCDDD", "2020")
 golosinasPedidas = [] # Contendrá información sobre los productos seleccionados por el usuario.
 opcion = False # Será utilizada para la condición del bucle.
 empleadoVerificado = False # Se inicia acá para volverla inmune a los cambios internos del bucle.
+totalPedido = 0
 while opcion != "d" and opcion != "D": # El valor de "opcion" empieza en "False".
     opcion = input("Elija:\n a) Pedir golosina.\n b) Mostrar golosinas.\n c) Rellenar golosinas.\n d) Apagar máquina.\n ")
     print() # Preguntamos qué acción realizar cada vez que empiece el bucle.
     numeroPedido = None # Servirá para identificar algún producto en "golosinas".
     cantidad = None # Servirá para indicar la cantidad de unidades a operar.
+    golosinaYaRetirada = False
 
     # Opción A. Pide productos de la máquina.
     if opcion == "a" or opcion == "A":
@@ -69,11 +71,21 @@ while opcion != "d" and opcion != "D": # El valor de "opcion" empieza en "False"
             print("La cantidad ingresada está por debajo de uno o por encima de la almacenada. No se puede. ")
             print()
             continue
-        # Una vez se valida la cantidad, se ingresa la información de la
-        # operación en "golosinasPedidas" y se substraen las unidades
-        # retiradas de "golosinas".
-        golosinasPedidas.append([golosinas[numeroPedido-1][0], golosinas[numeroPedido-1][1], cantidad])
-        golosinas[numeroPedido-1][2] -= cantidad
+        # Una vez se validada la cantidad, se revisa si el producto ya ha sido
+        # pedido antes: si sí, tan sólo se aumenta la cantidad de unidades; si
+        # no, se añade una línea nueva. Pase lo que pase, reduce la cantidad de
+        # "golocinas" de forma acorde.
+        for i in range(0, len(golosinasPedidas)):
+            if golosinas[numeroPedido-1][1] not in golosinasPedidas[i][1]:
+                pass
+            else:
+                golosinasPedidas[i][2] += cantidad
+                golosinas[numeroPedido-1][2] -= cantidad
+                golosinaYaRetirada = True
+                break
+        if golosinaYaRetirada != True:
+            golosinasPedidas.append([golosinas[numeroPedido-1][0], golosinas[numeroPedido-1][1], cantidad])
+            golosinas[numeroPedido-1][2] -= cantidad
         print()
 
     # Opción B. Muestra por pantalla la lista entera de productos en un bucle.
@@ -123,9 +135,11 @@ while opcion != "d" and opcion != "D": # El valor de "opcion" empieza en "False"
 
         print("Usted ha pedido:")
         for i in range(0,len(golosinasPedidas)):
+            totalPedido += golosinasPedidas[i][2]
             for j in range(0,len(golosinasPedidas[0])):
                 print(golosinasPedidas[i][j], end='  ')
             print()
+        print(f"Total: {totalPedido}.")
         print()
 
     # En caso de que no haya sido ninguno de los anteriores, se hará saber y repetirá la pregunta.
