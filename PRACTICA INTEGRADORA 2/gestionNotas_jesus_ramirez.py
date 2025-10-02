@@ -44,7 +44,7 @@ def mostrarMejorMateria(materias):
     mejorMateria = "n/a"
     for i in range(4):
         if materias[i][3] == nota:
-            mejorMateria += " y " + materias[i][0]
+            mejorMateria += ", " + materias[i][0]
 
         if materias[i][3] > nota:
             nota = materias[i][3]
@@ -61,19 +61,19 @@ for key in alumnos:
 
     print(f"Notas calificadas de {alumnos[key]}.\nMateria, 1ra nota, 2da nota, promedio.")
     mostrarNotas(materias)
-    print(f"Mejor materia: {mostrarMejorMateria(materias)}.\nY la nota final es: {notasFinales[iteracion][1]}.")
+    print(f"Mejor(es) materia(z): {mostrarMejorMateria(materias)}.\nY la nota final es: {notasFinales[iteracion][1]}.")
     print()
     iteracion += 1
 
 for i in range(4):
     nota = -1.0
     mejorNota = ""
+    print(notasFinales[i])
     for i in range(4):
         if notasFinales[i][1] == nota:
-            mejorNota += " y " + notasFinales[i][0]
-
+            mejorNota += ", " + notasFinales[i][0]
         if notasFinales[i][1] > nota:
             nota = notasFinales[i][1]
             mejorNota = notasFinales[i][0]
 
-print(f"La mejor nota pertenece a {mejorNota}, con {nota} puntos.")
+print(f"Mejor(es) nota(s): {mejorNota}, con {nota} puntos.")
