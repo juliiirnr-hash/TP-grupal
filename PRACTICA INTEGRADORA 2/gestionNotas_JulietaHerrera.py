@@ -47,7 +47,7 @@ for value in alumno.values():
       i=0
       suma=0
       while i<2:
-        nota=float(input(f"Ingrese la nota:{i+1}: "))
+        nota=float(input(f"Ingrese la nota{i+1}: "))
         if 0<=nota<=10:
            fila.append(nota)
            i+=1
