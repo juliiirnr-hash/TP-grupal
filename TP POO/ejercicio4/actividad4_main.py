@@ -38,7 +38,7 @@ class CostoComputadora:
         Computadora.componentes_de_cpu = []
         while True:
             print()
-            if input("Ingrese una «S» si quiere añadir un componente. ") != "s":
+            if input("Ingrese una «S» si quiere añadir un componente. ").lower() != "s":
                 break
 
             while True:
@@ -131,16 +131,16 @@ class CostoComputadora:
             precio_componentes += (Computadora.componentes_de_cpu[i].precio * Computadora.componentes_de_cpu[i].cantidad)
             print()
 
-        print(f"Precio por componentes: {precio_componentes} pesos Arg.")
+        print(f"Precio por componentes: {round(precio_componentes,2)} pesos Arg.")
         precio_venta = 0
         if precio_componentes < 50000:
             precio_venta += (precio_componentes * 1.40)
-            print(f"El precio de venta es: {precio_venta} pesos Arg.")
+            print(f"El precio de venta es: {round(precio_venta,2)} pesos Arg.")
         else:
             precio_venta += (precio_componentes * 1.30)
-            print(f"Precio de venta: {precio_venta} pesos Arg.")
+            print(f"Precio de venta: {round(precio_venta,2)} pesos Arg.")
 
-        print(f"Precio combinado: {precio_componentes+precio_venta} pesos Arg.")
+        print(f"Precio combinado: {round(precio_componentes+precio_venta,2)} pesos Arg.")
         print()
 
 costo_computadora = CostoComputadora()

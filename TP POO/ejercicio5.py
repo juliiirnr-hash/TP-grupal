@@ -17,7 +17,8 @@ class Barrio(): # --------------------------------------------------------------
         for viv in self.viviendas:
             total += viv.superficieTerreno
         return total
-
+    
+    
     def getSuperficieTotalTerrenoXManzana(self, manzana):
         total = 0
         for viv in self.viviendas:
