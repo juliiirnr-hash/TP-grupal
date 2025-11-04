@@ -100,7 +100,7 @@ Argentina
  Superficie: 2780400.0
  Continente: America 
 
- -----
+-----------------------------
 
  📋 MENÚ PRINCIPAL
 a. Buscar País
@@ -108,22 +108,31 @@ b. Filtrar países
 c. Ordenar países
 d. Estadísticas de países
 e. Salir
-Ingrese la opción que desea: d
+Ingrese la opción que desea: b
 
-Pais con mayor poblacion: India con 1476771871 habitantes
-Pais con manor poblacion: Nueva Zelanda con 5310000 habitantes
-------------------------------
-Promedio de Población Mundial: 156207805.76190478
-------------------------------
-Promedio de la superficie: 2616155.3333333335
-------------------------------
-Cantidad de paises por continente
-America: 8
- Europa: 6
- Africa: 3
- Asia: 2
- Oceania: 2
- Antartida: 0
+1. Buscar por continente
+2. Rango poblacional
+3. Rango de superficie
+Ingrese la opción que desea: 1
+Ingresar el continente: america
+Paises del Continente ingresado
+Bolivia
+
+Colombia
+
+Peru
+
+Mexico
+
+Argentina
+
+Brasil
+
+Estados Unidos
+
+Canada
+
+--------------------
 
 
 ##### *integrantes del proyecto:*
