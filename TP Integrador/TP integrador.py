@@ -86,58 +86,50 @@ def filtrar_por_continente(paises):
 
 
 def rango_poblacion(paises):
-    Muy_Baja_Poblacion=[]
-    Poblacion_baja=[]
-    Poblacion_Media=[]
-    Poblacion_Alta=[]
-    Poblacion_MuyAlta=[]
+    Poblacion_Baja = []
+    Poblacion_Media = []
+    Poblacion_Alta = []
+    Poblacion_MuyAlta = []
+
     for pais in paises:
-
-        if pais.poblacion <1000000: # Se compara la poblacion
-            Muy_Baja_Poblacion.append(pais.nombre)
-
-        elif 1000000<= pais.poblacion <10000000: # Con diversos rangos
-            Poblacion_baja.append(pais.nombre)
-
-        elif 10000000<= pais.poblacion <50000000:
+        if pais.poblacion < 20000000:
+            Poblacion_Baja.append(pais.nombre)
+        elif pais.poblacion < 100000000:
             Poblacion_Media.append(pais.nombre)
-
-        else:
+        elif pais.poblacion < 500000000:
             Poblacion_Alta.append(pais.nombre)
+        else:
+            Poblacion_MuyAlta.append(pais.nombre)
 
-    
-    print("")
-    print(f"Paises con cantidad de poblacion Muy Alta:{', '.join(Poblacion_MuyAlta)}")
-    print(f"Paises con cantidad de poblacion Alta:{', '.join(Poblacion_Alta)}")
-    print(f"Paises con cantidad de poblacion Media:{', '.join(Poblacion_Media)}")
-    print(f"Paises con cantidad de poblacion Baja:{', '.join(Poblacion_baja)}")
+    print(f"Países con población Baja: {', '.join(Poblacion_Baja)}")
+    print(f"Países con población Media: {', '.join(Poblacion_Media)}")
+    print(f"Países con población Alta: {', '.join(Poblacion_Alta)}")
+    print(f"Países con población Muy Alta: {', '.join(Poblacion_MuyAlta)}")
+
 
 
 def rango_superficie(paises):
-    Superficie_MuyPequeña=[]
-    Superficie_baja=[]
-    Superficie_Media=[]
-    Superficie_Alta=[]
-    Superficie_MuyAlta=[]
+    Superficie_Baja = []
+    Superficie_Media = []
+    Superficie_Alta = []
+    Superficie_MuyAlta = []
+
     for pais in paises:
-        if int(pais.superficie)<10000: # Compara la superficie de cada pais
-            Superficie_MuyPequeña.append(pais.nombre)
+        superficie = int(pais.superficie)
 
-        elif 10000<=pais.superficie<100000:
-            Superficie_baja.append(pais.nombre) # Y lo agrega a una lista dependiendo del rango
-
-        elif 100000<=pais.superficie<1000000:
+        if superficie < 500000:  
+            Superficie_Baja.append(pais.nombre)
+        elif superficie < 2000000:  
             Superficie_Media.append(pais.nombre)
-
-        elif 1000000<=pais.superficie<3000000:
+        elif superficie < 5000000:  
             Superficie_Alta.append(pais.nombre)
-        else:
+        else:  
             Superficie_MuyAlta.append(pais.nombre)
-    print(f"Paises con cantidad de Superficie Muy Alta:{', '.join(Superficie_MuyAlta)}")
-    print(f"Paises con cantidad de Superficie Alta:{', '.join(Superficie_Alta)}")
-    print(f"Paises con cantidad de Superficie Media:{', '.join(Superficie_Media)}")
-    print(f"Paises con cantidad de Superficie Baja:{', '.join(Superficie_baja)}")
-    print(f"Paises con cantidad de Superficie Muy Baja:{', '.join(Superficie_MuyPequeña)}")
+
+    print(f"Paises con Superficie Baja: {', '.join(Superficie_Baja)}")
+    print(f"Paises con Superficie Media: {', '.join(Superficie_Media)}")
+    print(f"Paises con Superficie Alta: {', '.join(Superficie_Alta)}")
+    print(f"Paises con Superficie Muy Alta: {', '.join(Superficie_MuyAlta)}")
 
 
 
