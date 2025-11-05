@@ -24,7 +24,7 @@ def buscar_pais(paises):
 
     for pais in paises: # Busca pais comparando con pais ingresado hasta encontrarlo
         if buscarpais in pais.nombre.lower():
-            print(f"    {pais.nombre}\n Poblacion: {pais.poblacion}\n Superficie: {pais.superficie}\n Continente: {pais.continente} ")
+            print(f"    {pais.nombre}\n Poblacion: {pais.poblacion}\n Superficie: {pais.superficie} km2\n Continente: {pais.continente} ")
             print()
             encontrado=True
     
@@ -239,9 +239,9 @@ def menu(paises): # Función principal del menú
             case "d":
                 may_minPoblacion(paises)
                 print("-" * 30)
-                print(f"Promedio de Población Mundial: {round(prom_poblacion(paises),2)}")
+                print(f"Promedio de Población Mundial: {round(prom_poblacion(paises),2)} habitantes")
                 print("-" * 30)
-                print(f"Promedio de la superficie: {round(prom_superficie(paises), 2)}")
+                print(f"Promedio de la superficie: {round(prom_superficie(paises), 2)} km2")
                 print("-" * 30)
                 print()
                 cant_paisesxCont(paises)
