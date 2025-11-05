@@ -139,6 +139,7 @@ Canada
 Julieta Herrera
 Gabriel D'anna
 Tatiana Peralta
+Jesús Ramirez
 María de los Angeles Zalazar
 
 Comisión 1prog1
