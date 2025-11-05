@@ -7,7 +7,7 @@ def lista_paises():
     listaPaises = []
     with open("paises.csv","r") as archivo:
         for linea in archivo:
-            datos=linea.strip().split(",")
+            datos=linea.strip().split(";")
 
             pais = Pais(datos[0],int(datos[1]),datos[3],float(datos[2]))
 
@@ -101,11 +101,12 @@ def rango_poblacion(paises):
         else:
             Poblacion_MuyAlta.append(pais.nombre)
 
-    print(f"Países con población Baja: {', '.join(Poblacion_Baja)}")
-    print(f"Países con población Media: {', '.join(Poblacion_Media)}")
-    print(f"Países con población Alta: {', '.join(Poblacion_Alta)}")
-    print(f"Países con población Muy Alta: {', '.join(Poblacion_MuyAlta)}")
-
+    print("")
+    print(f"Países con población Baja: {', '.join(Poblacion_Baja)}\n")
+    print(f"Países con población Media: {', '.join(Poblacion_Media)}\n")
+    print(f"Países con población Alta: {', '.join(Poblacion_Alta)}\n")
+    print(f"Países con población Muy Alta: {', '.join(Poblacion_MuyAlta)}\n")
+    print("")
 
 
 def rango_superficie(paises):
@@ -126,17 +127,18 @@ def rango_superficie(paises):
         else:  
             Superficie_MuyAlta.append(pais.nombre)
 
-    print(f"Paises con Superficie Baja: {', '.join(Superficie_Baja)}")
-    print(f"Paises con Superficie Media: {', '.join(Superficie_Media)}")
-    print(f"Paises con Superficie Alta: {', '.join(Superficie_Alta)}")
-    print(f"Paises con Superficie Muy Alta: {', '.join(Superficie_MuyAlta)}")
-
+    print("")
+    print(f"Paises con Superficie Baja: {', '.join(Superficie_Baja)}\n")
+    print(f"Paises con Superficie Media: {', '.join(Superficie_Media)}\n")
+    print(f"Paises con Superficie Alta: {', '.join(Superficie_Alta)}\n")
+    print(f"Paises con Superficie Muy Alta: {', '.join(Superficie_MuyAlta)}\n")
+    print("")
 
 
 def may_minPoblacion(paises):
     mayor = max(paises, key=lambda x: x.poblacion)
     menor = min(paises, key=lambda x: x.poblacion)
-    print(f"Pais con mayor poblacion: {mayor.nombre} con {mayor.poblacion} habitantes")  
+    print(f"Pais con mayor poblacion: {mayor.nombre} con {mayor.poblacion} habitantes\n")  
     print(f"Pais con manor poblacion: {menor.nombre} con {menor.poblacion} habitantes")    
    
    

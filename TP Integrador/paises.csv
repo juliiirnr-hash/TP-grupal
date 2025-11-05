@@ -1,21 +1,59 @@
-Argentina,46300000,2780400,America
-Brasil,212000000,8515767,America
-Colombia,54100000,1141748,America
-Bolivia,12500000,1098585,America
-Peru,35000000,1285216,America
-Mexico,131947000,1964375,America
-Estados Unidos,344234000,9833517,America
-Canada,40200000,9984670,America
-Alemania,84075075,357022,Europa
-Reino Unido,69551332,243610,Europa
-Italia,58934177,301340,Europa
-Espania,49315949,505370,Europa
-Polonia,37732836,312685,Europa
-India,1476771871,3287263,Asia
-Francia,68606000,632702,Europa
-Japon,125801681,377975,Asia
-Australia,27400000,7741220,Oceania
-Nueva Zelanda,5310000,268838,Oceania
-Argelia,48520000,2381741,Africa
-Egipto,114896000,1001450,Africa
-Nigeria,237168000,923768,Africa
+Argentina;46300000;2780400;America
+Brasil;212000000;8515767;America
+Colombia;54100000;1141748;America
+Bolivia;12500000;1098585;America
+Peru;35000000;1285216;America
+Mexico;131947000;1964375;America
+Estados Unidos;344234000;9833517;America
+Canada;40200000;9984670;America
+Chile;20700000;756102;America
+Venezuela;28500000;916445;America
+Uruguay;3420000;176215;America
+Paraguay;7200000;406752;America
+Ecuador;18200000;283561;America
+Costa Rica;5300000;51100;America
+Cuba;11100000;109884;America
+Republica Dominicana;11100000;48671;America
+Guatemala;18200000;108889;America
+Panama;4500000;75420;America
+Alemania;84075075;357022;Europa
+Reino Unido;69551332;243610;Europa
+Italia;58934177;301340;Europa
+Espania;49315949;505370;Europa
+Polonia;37732836;312685;Europa
+Francia;68606000;632702;Europa
+Paises Bajos;17880000;41543;Europa
+Suecia;10550000;450295;Europa
+Portugal;10320000;92212;Europa
+Noruega;5500000;385207;Europa
+Suiza;8900000;41285;Europa
+Grecia;10400000;131957;Europa
+Rumania;19100000;238397;Europa
+Ucrania;36500000;603628;Europa
+India;1476771871;3287263;Asia
+Japon;125801681;377975;Asia
+China;1413000000;9596961;Asia
+Corea del Sur;51600000;100210;Asia
+Indonesia;279100000;1904569;Asia
+Arabia Saudita;37500000;2149690;Asia
+Turquia;86200000;783562;Asia
+Tailandia;71600000;513120;Asia
+Vietnam;98800000;331212;Asia
+Filipinas;117000000;300000;Asia
+Pakistan;243000000;881913;Asia
+Iran;89800000;1648195;Asia
+Argelia;48520000;2381741;Africa
+Egipto;114896000;1001450;Africa
+Nigeria;237168000;923768;Africa
+Sudafrica;62000000;1221037;Africa
+Etiopia;129000000;1104300;Africa
+Marruecos;38500000;446550;Africa
+Kenia;56300000;580367;Africa
+Ghana;34700000;238533;Africa
+Tanzania;66700000;945087;Africa
+Camerun;28800000;475442;Africa
+Australia;27400000;7741220;Oceania
+Nueva Zelanda;5310000;268838;Oceania
+Papua Nueva Guinea;9950000;462840;Oceania
+Fiyi;920000;18274;Oceania
+Samoa;225000;2842;Oceania
