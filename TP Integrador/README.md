@@ -134,10 +134,10 @@ Canada
 
 --------------------
 
-##### *integrantes del proyecto:*
+##### *Docente:*
 Gerardo Magni.
 
-##### *integrantes del proyecto:*
+##### *Integrantes del proyecto:*
 Julieta Herrera,
 Gabriel D'anna,
 Tatiana Peralta,
