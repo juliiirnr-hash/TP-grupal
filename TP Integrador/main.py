@@ -7,7 +7,7 @@ def lista_paises():
     listaPaises = []
     with open("paises.csv","r", encoding="iso-8859-1") as archivo:
         for linea in archivo:
-            datos=linea.strip().split(";")
+            datos=linea.strip().split(",")
 
             pais = Pais(datos[0],int(datos[1]),datos[3],float(datos[2]))
 
