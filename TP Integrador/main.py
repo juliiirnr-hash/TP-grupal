@@ -24,7 +24,7 @@ def buscar_pais(paises):
 
     for pais in paises: # Busca pais comparando con pais ingresado hasta encontrarlo
         if buscarpais in pais.nombre.lower():
-            print(f"    {pais.nombre}\n Poblacion: {pais.poblacion}\n Superficie: {pais.superficie} km2\n Continente: {pais.continente} ")
+            print(f"    {pais.nombre}\n Poblacion: {pais.poblacion} habitantes\n Superficie: {pais.superficie} km2\n Continente: {pais.continente} ")
             print()
             encontrado=True
     
